@@ -45,7 +45,7 @@ SPACING SYSTEM (px)
 
 */
 
-*/ * {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -56,25 +56,15 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
 }
 
-.section-hero {
-  background-color: #fdf2e9;
-  padding: 9.6rem 0;
-}
-
-.hero {
-  max-width: 130rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
-  align-items: center;
-}
+/* ************************ */
+/* General Repeatable Components */
+/* ************************ */
 
 .heading-primary {
   font-size: 4.2rem;
@@ -85,23 +75,13 @@ body {
   margin-bottom: 3.2rem;
 }
 
-.hero-description {
-  font-size: 2rem;
-  line-height: 1.6;
-  margin-bottom: 4.8rem;
-}
-
-.hero-image {
-  width: 100%;
-}
-
 .btn:link,
 .btn:visited {
   font-size: 2rem;
   text-decoration: none;
   padding: 1.6rem 3.2rem;
   border-radius: 1.2rem;
-  font-weight: 700;
+  font-weight: 600;
 
   transition: all 0.3s;
 }
@@ -133,4 +113,83 @@ body {
 
 .margin-right-small {
   margin-right: 1.6rem !important;
+}
+
+/* ************************ */
+/* Header */
+/* ************************ */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 2.4rem;
+}
+
+/* ************************ */
+/* Hero Section */
+/* ************************ */
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  padding: 0 3.2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.delivered-images {
+  display: flex;
+}
+
+.delivered-images img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-images img:last-child {
+  margin-right: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
 }
